@@ -190,7 +190,7 @@ bool MoveItVisualTools::loadSharedRobotState()
     hidden_robot_state_->update(true);
   }
 
-  return shared_robot_state_;
+  return bool(shared_robot_state_);
 }
 
 moveit::core::RobotStatePtr& MoveItVisualTools::getSharedRobotState()
