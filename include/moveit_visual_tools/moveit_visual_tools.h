@@ -181,7 +181,7 @@ public:
    * \brief Load publishers as needed
    */
   void loadTrajectoryPub(const std::string &display_planned_path_topic = DISPLAY_PLANNED_PATH_TOPIC);
-  void loadRobotStatePub(const std::string &robot_state_topic = "");
+  void loadRobotStatePub(const std::string &robot_state_topic = DISPLAY_ROBOT_STATE_TOPIC);
 
   /**
    * \brief Allow a pre-configured planning scene monitor to be set for publishing collision objects, etc

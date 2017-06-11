@@ -17,7 +17,8 @@ find_package(catkin REQUIRED COMPONENTS
   cmake_modules
 )
 
-find_package(Eigen REQUIRED)
+find_package(PkgConfig)
+pkg_search_module(Eigen3 REQUIRED eigen3)
 find_package(Boost REQUIRED thread system)
 
 # Catkin
